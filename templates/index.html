@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="API's públicas para tus proyectos web" />
+    <meta
+      name="description"
+      content="En este sitio encuentras variedad de API's públicas para utilizar en tus proyectos web"
+    />
+    <title>APIs públicas | Apilink</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" />
+    {% from "macros.html" import head_code %}
+    {{ head_code() }}
+  </head>
+  <body>
+    <noscript>Por favor habilite Javascript para cargar la página</noscript>
+    <header id="header"></header>
+    <main>
+      <section class="banner mb-5">
+        <div class="banner-div1">
+          <h1 class="banner-title">APIs públicas para tus proyectos web</h1>
+          <p class="banner-text">
+            Descubre APIs diseñadas para inspirar, educar y agilizar tu proceso
+            de desarrollo. Si estás explorando nuevas tecnologías, buscando
+            ejemplos o requieres integrar datos específicos en tu aplicación,
+            nuestras APIs están diseñadas para ofrecerte soluciones versátiles
+            y listas para usar.
+          </p>
+          <a id="cta1" class="banner-text" href="/catalog"
+            >Ver APIs <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+        <div class="banner-div2">
+          <img
+            src="../static/assets/site/api-banner.webp"
+            class="img-fluid"
+            alt="Api restful"
+          />
+        </div>
+      </section>
+      <section class="banner mb-5">
+        <div class="banner-div2">
+          <img
+            id="json-image"
+            src="../static/assets/site/jsonapi.webp"
+            class="img-fluid pt-0"
+            style="float: right"
+            alt="Json file"
+          />
+        </div>
+        <div class="banner-div1">
+          <p class="banner-text" style="max-width: 450px; float: left">
+            Las API (Interfaces de Programación de Aplicaciones) facilitan
+            construir experiencias digitales innovadoras, permitiendo una
+            colaboración entre aplicaciones y sistemas, y acelerando el proceso
+            de desarrollo, al proporcionar componentes para la creación de
+            aplicaciones completas integrando diversas fuentes de datos y
+            capacidades.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>

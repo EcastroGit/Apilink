@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="API's públicas para tus proyectos web" />
+    <meta
+      name="description"
+      content="Descubre y utiliza las APIs web disponibles en nuestro sitio"
+    />
+    <title>Catálogo de API's | Apilink</title>
+    <link
+      href="{{ url_for('static', filename='css/catalog.css') }}"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="{{ url_for('static', filename='js/catalogInfo.js') }}"
+    ></script>
+    <script
+    defer
+    src="{{ url_for('static', filename='js/apiFetching.js') }}"
+  ></script>
+    {% from "macros.html" import head_code %} {{ head_code() }}
+  </head>
+  <body>
+    <header id="header"></header>
+    <main>
+      <div class="h1-container">
+        <h1 class="text-center">Catálogo de APIs</h1>
+      </div>
+      <div id="catalog-container">
+        <div id="catalog-list">
+          <p class="fw-bolder ps-4">Lista de APIs</p>
+          <ul>
+            <li id="api-marvel" class="list-element">Personajes de Marvel</li>
+            <li id="api-dc-comics" class="list-element">
+              Personajes DC comics
+            </li>
+            <li id="api-europe-teams" class="list-element">
+              Equipos top de Europa
+            </li>
+          </ul>
+        </div>
+        <div id="catalog-demos">
+          <h2 class="text-center">Personajes de marvel</h2>
+          <br />
+          <p>
+            La API de personajes de Marvel es una herramienta que brinda acceso
+            a una colección de información sobre los icónicos personajes del
+            universo Marvel. Desde superhéroes legendarios hasta villanos
+            memorables, esta API proporciona datos detallados sobre sus
+            historias, habilidades, afiliaciones y mucho más. Ya sea para
+            desarrollar aplicaciones, crear sitios web temáticos o simplemente
+            explorar el trasfondo de estos personajes, la API abre las puertas a
+            un mundo de conocimiento para los entusiastas y desarrolladores por
+            igual.
+          </p>
+          <p class="fw-semibold">Endpoint:</p>
+          <div class="endpoint-container">
+            <a href="http://localhost:4000/api/marvel/v1/characters"
+              >http://localhost:4000/api/marvel/v1/characters</a
+            >
+          </div>
+          <h3 class="text-center mt-4">Demo:</h3>
+          <div id="fetching-div"></div>
+          <div id="play-btn" class="play-btn" onclick="getMarvelData()">
+            <i class="bi bi-play-circle-fill"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>

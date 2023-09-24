@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="documentación de las APIs" />
+    <meta
+      name="description"
+      content="Encuentra documentación sobre las APIs webs disponibles."
+    />
+    <title>Documentación APIs | Apilink</title>
+    <!-- Same styles as catalog-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/catalog.css') }}" />
+    <script
+      defer
+      src="{{ url_for('static', filename='js/apisDocs.js') }}"
+    ></script>
+    <!-- Sintax highlighting-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+          hljs.highlightAll();
+      });
+    </script>
+    {% from "macros.html" import head_code %}
+    {{ head_code() }}
+</head>
+<body>
+    <header id="header"></header>
+    <main>
+        <div class="h1-container">
+          <h1 class="text-center">Documentación de las APIs</h1>
+        </div>
+        <div id="catalog-container">
+          <div id="catalog-list">
+            <p class="fw-bolder ps-4">Lista de APIs</p>
+            <ul>
+              <li id="api-marvel" class="list-element">Personajes de Marvel</li>
+              <li id="api-dc-comics" class="list-element">
+                Personajes DC comics
+              </li>
+              <li id="api-europe-teams" class="list-element">
+                Equipos top de Europa
+              </li>
+            </ul>
+          </div>
+          <div id="catalog-demos">
+            <h2 class="text-center">Personajes de marvel</h2>
+            <br />
+            <p>
+             La API de personajes de Marvel consta de una estructura de datos básica en formato JSON,
+             conformada por un array de objetos, donde cada objeto representa un personaje de Marvel en concreto, con su respectivo id, image,
+             name, rol y una propiedad llamada skills cuyo valor es un array. 
+        
+            </p>
+            <p class="fw-semibold">Endpoint:</p>
+            <div class="endpoint-container"><a href="http://localhost:4000/api/marvel/v1/characters"
+              >http://localhost:4000/api/marvel/v1/characters</a
+            ></div>
+            </br>
+            <p class="fw-semibold">Estructura de datos JSON:</p>
+            <pre>
+              <code class="javascript">
+              [
+                {
+                  "id": "M1",
+                  "image": "image_url_here",
+                  "name": "Spiderman",
+                  "rol": "Héroe",
+                  "skills": ["fuerza sobrehumana", "rapidez", "reflejos", "sentido arácnido", "lucha cuerpo a cuerpo"]
+                },
+                {
+                  "id": "M2",
+                  "image": "image_url_here",
+                  "name": "Capitán América",
+                  "rol": "Héroe",
+                  "skills": ["fuerza mejorada", "artes marciales", "curación acelerada"] 
+                }
+              ]
+              </code>
+            </pre>
+          </div>
+        </div>
+      </main>
+    <footer id="footer"></footer>
+</body>
+</html>

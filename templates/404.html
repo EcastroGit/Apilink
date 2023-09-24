@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <meta name="title" content="página de error 404" />
+    <meta
+      name="description"
+      content="página de error 404"
+    />
+    <title>Error 404</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/404.css') }}"
+    />
+    {% from "macros.html" import head_code %} {{ head_code() }}
+  </head>
+  <body>
+    <header id="header"></header>
+    <div id="page-404">
+      <h1 class="text-center">Página no encontrada</h1>
+      <img id="image-404" src="../static/assets/site/404.webp" class="img-fluid" alt="Error 404" />
+      <a id="cta-404"class="text-center" href="/">Ir a inicio</a>
+    </div>
+    <footer id="footer"></footer>
+  </body>
+</html>

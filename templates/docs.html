@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Documentación general de las APIs" />
+    <meta
+      name="description"
+      content="Descubre un vistazo general sobre las APIs disponibles en nuestro sitio"
+    />
+    <title>Documentación | Apilink</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/docs.css') }}" />
+    {% from "macros.html" import head_code %}
+    {{ head_code() }}
+    <!-- Sintax highlighting-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+          hljs.highlightAll();
+      });
+    </script>
+</head>
+<body>
+    <header id="header"></header>
+    <main>
+      <section>
+        <div id="docs-container">
+          <div class="h1-container">
+            <h1 class="text-center">Documentación</h1>
+          </div>
+          <p class="docs-paragraph">
+            Las APIs ofrecidas en el sitio web funcionan como endpoints que pueden ser consumidos a través del método GET 
+            desde cualquier otro sitio web mediante el uso de métodos convencionales en Javascript como: fetch API, librería axios, ajax (jQuery), XMLhttpRequest.
+            La estructura de datos, y por ende, la presentación de la información, podría presentar algunas variaciones de acurerdo a cada API en
+            particular, por lo cual la forma como se utilicen y presenten los datos en una interfaz de usuario queda a uso y discreción del desarrollador.
+          </p>
+          <br />
+          <p class="docs-paragraph">
+            A continuación se presenta un ejemplo básico con <strong>Javascript</strong> para consumir y presentar en una interfaz gráfica una de las APIs disponibles en el sitio web:
+          </p>
+          <div class="text-start">
+            <pre>
+              <code class="javascript">
+                function getApiData() {
+
+                  // Div where data is displayed
+                  const fetchingDiv = document.querySelector("#fetching-div");
+                  const endpoint = "The API endpoint";
+                
+                  fetch(endpoint)
+                    .then((response) => response.json())
+                    .then((data) => showData(data))
+                    .catch((error) => console.log(error));
+
+                  // Function to show data on UI
+                  function showData(data) {
+
+                    data.forEach((character) => {
+                      const card = document.createRange().createContextualFragment(
+                        ` 
+                        Your HTML here
+                        `
+                      );
+
+                      fetchingDiv.appendChild(card);
+                    });
+                  }
+                }
+              </code>
+            </pre>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+</body>
+</html>

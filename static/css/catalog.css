@@ -1,0 +1,143 @@
+main {
+  height: fit-content;
+}
+#catalog-container {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 80%;
+  margin: 3rem auto 3rem;
+  padding: 5px;
+}
+#catalog-list {
+  width: 25%;
+  height: fit-content;
+  padding: 50px 5px 40px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+.list-element:hover {
+  color: orangered;
+  cursor: pointer;
+}
+#catalog-demos {
+  width: 70%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+.endpoint-container {
+  background-color: rgb(241, 239, 236);
+  width: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+#fetching-div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: rgb(241, 239, 236);
+  min-height: 200px;
+  max-height: fit-content;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+.api-card {
+  background-color: rgb(252, 252, 252);
+  border: 1px solid rgb(88, 85, 85);
+  width: 140px;
+  height: 160px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.api-card img {
+  width: 130px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+.api-card-teams {
+  background-color: rgb(252, 252, 252);
+  border: 1px solid rgb(88, 85, 85);
+  width: 140px;
+  height: 200px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+.api-card-teams img {
+  width: 130px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+#play-btn {
+  font-size: 2.3rem;
+  text-align: center;
+  margin: auto;
+  color: rgb(102, 96, 94);
+  width: fit-content;
+}
+#play-btn:hover {
+  cursor: pointer;
+  color: orangered;
+}
+
+@media screen and (max-width: 1200px) {
+  #catalog-container {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #catalog-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #catalog-container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 95%;
+  }
+  #catalog-list {
+    width: 90%;
+    margin: 10px auto 10px;
+  }
+  #catalog-demos {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #catalog-list {
+    width: 95%;
+  }
+  #catalog-demos {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #catalog-container {
+    width: 100%;
+  }
+  #catalog-list {
+    width: 100%;
+  }
+  #catalog-demos {
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+  }
+}

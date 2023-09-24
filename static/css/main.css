@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 2000px;
+    height: fit-content;
+}
+.h1-container {
+    margin: 5rem auto 5rem;
+}
+#cta1 {
+   font-weight: 600;
+}
+#cta1:hover {
+    color: orangered;
+}
+#header-nav a:hover {
+ color: orangered;
+}
+#footer {
+    height: fit-content;
+    background-color: rgb(212, 231, 238);
+    padding: 20px;
+    border-top: 2px solid rgb(197, 195, 195);
+}
+#footer div {
+    width: fit-content;
+    margin: auto;
+    padding: 3px;
+}
+#footer a {
+    text-decoration: none;
+    color: black;
+}
+.footer-nav {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 10px;
+}
+#footer a:hover {
+    color: orangered;
+}

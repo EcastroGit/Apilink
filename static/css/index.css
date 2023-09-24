@@ -1,0 +1,103 @@
+/* Banner principal */
+
+.banner {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+.banner > div {
+  width: 50%;
+  height: fit-content;
+  margin: auto;
+}
+.banner-div1 {
+  text-align: center;
+  padding-top: 5rem;
+  padding-right: 2rem;
+  padding-left: 4rem;
+}
+.banner-text {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  text-align: left;
+}
+.banner-div2 {
+  padding-top: 5rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .banner {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .banner-div2 {
+    font-size: 2.0rem;
+  }
+  .banner-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .banner {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .banner-div1 {
+    padding-top: 4rem;
+    padding-right: 1.8rem;
+    padding-left: 2rem;
+  }
+  .banner-div2 {
+    padding-top: 4rem;
+  }
+  .banner-title {
+    font-size: 1.8rem;
+  }
+  .banner-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .banner {
+    display: flex;
+    flex-flow: column wrap;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .banner > div {
+    width: 80%;
+  }
+  .banner-div1 {
+    padding-top: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .banner-div2 {
+    padding-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .banner > div {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .banner {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .banner > div {
+    width: 95%;
+  }
+}
+
