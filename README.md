@@ -5,7 +5,8 @@ Full Stack web service app for providing public APIs to be used in development p
 ## Technologies:
 
 * __Frontend:__ HTML, CSS, Bootstrap, Javascript, Jinja2 
-* __Backend:__ Python with Flask, and MySQL
+* __Backend:__ Python & Flask
+* __Database:__ Mongo DB
 
 ## Screenshots
 
