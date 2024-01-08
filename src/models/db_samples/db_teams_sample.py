@@ -1,4 +1,4 @@
-host_name = "http://localhost:4000/api/europe-teams/v1/top-teams/crest/"
+host_name = "https://apilink-pukn.onrender.com/api/europe-teams/v1/top-teams/crest/"
 
 europe_teams = [
   {

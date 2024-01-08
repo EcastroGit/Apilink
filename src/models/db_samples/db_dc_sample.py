@@ -1,4 +1,4 @@
-host_name = "http://localhost:4000/api/dc-comics/v1/characters/avatar/"
+host_name = "https://apilink-pukn.onrender.com/api/dc-comics/v1/characters/avatar/"
 
 dc_comics_characters = [
   {

@@ -1,4 +1,4 @@
-host_name = "http://localhost:4000/api/marvel/v1/characters/avatar/"
+host_name = "https://apilink-pukn.onrender.com/api/marvel/v1/characters/avatar/"
 
 marvel_characters = [
   {
