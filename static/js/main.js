@@ -49,7 +49,7 @@ header.innerHTML =
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="bi bi-github fs-5"></i></a>
+            <a class="nav-link" href="https://github.com/EcastroGit/Apilink"><i class="bi bi-github fs-5"></i></a>
           </li>
         </ul>
       </div>
@@ -69,9 +69,9 @@ header.innerHTML =
     <span><a href="/privacy-policy">Política de privacidad</a></span>
   </div>
   <div>
-    <span>© Copyright 2023 - Web API</span>
+    <span>© Copyright 2023 - Apilink</span>
   </div>
   <div>
-    <span>Developed by <strong>Esteban Castro</strong></span>
+    <span>Desarrollado por <strong>Esteban Castro</strong></span>
   </div>
  `
